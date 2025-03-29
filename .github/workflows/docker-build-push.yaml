@@ -1,6 +1,8 @@
 name: Build and Push Docker Image
 
-on:
+# 📌 Set trigger 
+
+on:  
   push:
     branches:
       - main
@@ -31,4 +33,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: sirvaiys/fastapi-diabetes:${{ env.SHORT_SHA }},sirvaiys/fastapi-diabetes:latest
+        tags: debapriya777/fastapi-diabetes:${{ env.SHORT_SHA }},debapriya777/fastapi-diabetes:latest
