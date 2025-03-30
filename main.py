@@ -53,7 +53,7 @@ def predict(data: PatientData):
         prediction = model.predict(input_scaled)[0]
         result = "Diabetic" if prediction == 1 else "Not Diabetic"
         
-        print("Continous Integration in Place! Thank You 4")
+        print("Continous Integration in Place! Thank You 5")
         return {
             "prediction": int(prediction),
             "result": result
